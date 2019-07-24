@@ -75,9 +75,12 @@
 //! [1]: https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation
 //! [2]: https://github.com/RustCrypto/stream-ciphers
 #![no_std]
+#![cfg_attr(all(target_env = "sgx", target_vendor = "mesalock"), feature(rustc_private))]
 extern crate block_cipher_trait;
 pub extern crate block_padding;
-#[cfg(feature = "std")]
+#[cfg(all(feature = "std", feature = "mesalock_sgx", not(target_env = "sgx")))]
+extern crate sgx_tstd as std;
+#[cfg(all(feature = "std", feature = "mesalock_sgx", target_env = "sgx"))]
 extern crate std;
 
 mod utils;

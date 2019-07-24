@@ -10,12 +10,12 @@ keywords = ["crypto", "des", "tdes", "block-cipher"]
 categories = ["cryptography", "no-std"]
 
 [dependencies]
-block-cipher-trait = "0.6"
-byteorder = { version = "1", default-features = false }
+block-cipher-trait = { git = "https://github.com/mesalock-linux/rustcrypto-traits-sgx" }
+byteorder = { git = "https://github.com/mesalock-linux/byteorder-sgx" }
 opaque-debug = "0.2"
 
 [dev-dependencies]
-block-cipher-trait = { version = "0.6", features = ["dev"] }
+#block-cipher-trait = { version = "0.6", features = ["dev"] }
 
 [badges]
 travis-ci = { repository = "RustCrypto/block-ciphers" }

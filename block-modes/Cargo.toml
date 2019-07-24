@@ -9,13 +9,15 @@ repository = "https://github.com/RustCrypto/block-ciphers"
 keywords = ["crypto", "block-cipher", "ciphers"]
 
 [dependencies]
-block-padding = "0.1"
-block-cipher-trait = "0.6"
+block-padding = { git = "https://github.com/mesalock-linux/rustcrypto-utils-sgx" }
+block-cipher-trait = { git = "https://github.com/mesalock-linux/rustcrypto-traits-sgx" }
+sgx_tstd = { rev = "v1.0.8", git = "https://github.com/baidu/rust-sgx-sdk.git", optional = true }
 
 [dev-dependencies]
-aes-soft = "0.3"
-hex-literal = "0.1"
+#aes-soft = "0.3"
+#hex-literal = "0.1"
 
 [features]
-default = ["std"]
-std = []
+default = ["std", "mesalock_sgx"]
+std = ["mesalock_sgx"]
+mesalock_sgx = ["sgx_tstd"]
