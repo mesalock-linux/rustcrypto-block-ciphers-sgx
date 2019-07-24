@@ -10,15 +10,15 @@ keywords = ["crypto", "aes", "rijndael", "block-cipher"]
 categories = ["cryptography", "no-std"]
 
 [dependencies]
-block-cipher-trait = "0.6"
+block-cipher-trait = { git = "https://github.com/mesalock-linux/rustcrypto-traits-sgx" }
 
-[target.'cfg(not(all(target_feature="aes", target_feature = "sse2", any(target_arch = "x86_64", target_arch = "x86"))))'.dependencies]
-aes-soft = "0.3"
+#[target.'cfg(not(all(target_feature="aes", target_feature = "sse2", any(target_arch = "x86_64", target_arch = "x86"))))'.dependencies]
+#aes-soft = "0.3"
 
-[target.'cfg(all(target_feature="aes", target_feature = "sse2", any(target_arch = "x86_64", target_arch = "x86")))'.dependencies]
-aesni = { version = "0.6", default-features = false }
+#[target.'cfg(all(target_feature="aes", target_feature = "sse2", any(target_arch = "x86_64", target_arch = "x86")))'.dependencies]
+aesni = { git = "https://github.com/mesalock-linux/rustcrypto-block-ciphers-sgx" }
 
 [dev-dependencies]
-block-cipher-trait = { version = "0.6", features = ["dev"] }
+#block-cipher-trait = { version = "0.6", features = ["dev"] }
 
-[workspace]
+#[workspace]

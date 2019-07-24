@@ -1,6 +1,8 @@
 [workspace]
 members = [
     "aes/aes-soft",
+    "aes/aes",
+    "aes/aesni",
     "blowfish",
     "block-modes",
     "cast5",
