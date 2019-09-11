@@ -11,7 +11,7 @@ keywords = ["crypto", "block-cipher", "ciphers"]
 [dependencies]
 block-padding = { git = "https://github.com/mesalock-linux/rustcrypto-utils-sgx" }
 block-cipher-trait = { git = "https://github.com/mesalock-linux/rustcrypto-traits-sgx" }
-sgx_tstd = { rev = "v1.0.8", git = "https://github.com/baidu/rust-sgx-sdk.git", optional = true }
+sgx_tstd = { rev = "v1.0.9", git = "https://github.com/baidu/rust-sgx-sdk.git", optional = true }
 
 [dev-dependencies]
 #aes-soft = "0.3"
