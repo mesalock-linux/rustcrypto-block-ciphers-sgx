@@ -83,11 +83,11 @@ extern crate sgx_tstd as std;
 #[cfg(all(feature = "std", feature = "mesalock_sgx", target_env = "sgx"))]
 extern crate std;
 
-mod utils;
-mod traits;
 mod errors;
-pub use traits::BlockMode;
+mod traits;
+mod utils;
 pub use errors::{BlockModeError, InvalidKeyIvLength};
+pub use traits::BlockMode;
 
 mod cbc;
 pub use cbc::Cbc;

@@ -1,5 +1,4 @@
-# RustCrypto: block ciphers
-[![Build Status](https://travis-ci.org/RustCrypto/block-ciphers.svg?branch=master)](https://travis-ci.org/RustCrypto/block-ciphers) [![dependency status](https://deps.rs/repo/github/RustCrypto/block-ciphers/status.svg)](https://deps.rs/repo/github/RustCrypto/block-ciphers)
+# RustCrypto: block ciphers [![Build Status](https://travis-ci.org/RustCrypto/block-ciphers.svg?branch=master)](https://travis-ci.org/RustCrypto/block-ciphers)
 
 Collection of [block ciphers][1] and [block modes][2] written in pure Rust.
 
@@ -16,14 +15,18 @@ cryptographic and security reviews.
 
 ## Supported algorithms
 | Name     | Alt name   | Crate name | crates.io | Docs |
-| ------------- |:-------------:| :-----:| :-----:| :-----:|
+|----------|------------|------------|-----------|------|
 | [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) | Rijndael | `aes` <br/><br/> `aesni` <br/><br/> `aes-soft` | [![crates.io](https://img.shields.io/crates/v/aes.svg)](https://crates.io/crates/aes) <br/><br/> [![crates.io](https://img.shields.io/crates/v/aesni.svg)](https://crates.io/crates/aesni)  <br/><br/> [![crates.io](https://img.shields.io/crates/v/aes-soft.svg)](https://crates.io/crates/aes-soft) | [![Documentation](https://docs.rs/aes/badge.svg)](https://docs.rs/aes)  <br/><br/> [![Documentation](https://docs.rs/aesni/badge.svg)](https://docs.rs/aesni)  <br/><br/> [![Documentation](https://docs.rs/aes-soft/badge.svg)](https://docs.rs/aes-soft) |
 | [Blowfish](https://en.wikipedia.org/wiki/Blowfish_(cipher)) |   | `blowfish` | [![crates.io](https://img.shields.io/crates/v/blowfish.svg)](https://crates.io/crates/blowfish) | [![Documentation](https://docs.rs/blowfish/badge.svg)](https://docs.rs/blowfish) |
 | [DES](https://en.wikipedia.org/wiki/Data_Encryption_Standard) + [3DES](https://en.wikipedia.org/wiki/Triple_DES) |  DEA + 3DEA  | `des` | [![crates.io](https://img.shields.io/crates/v/des.svg)](https://crates.io/crates/des) | [![Documentation](https://docs.rs/des/badge.svg)](https://docs.rs/des) |
+| [IDEA](https://simple.wikipedia.org/wiki/International_Data_Encryption_Algorithm) | | `idea` | [![crates.io](https://img.shields.io/crates/v/idea.svg)](https://crates.io/crates/idea) | [![Documentation](https://docs.rs/idea/badge.svg)](https://docs.rs/idea) |
 | [Kuznyechik](https://en.wikipedia.org/wiki/Kuznyechik) |  GOST R 34.12-2015  | `kuznyechik` | [![crates.io](https://img.shields.io/crates/v/kuznyechik.svg)](https://crates.io/crates/kuznyechik) | [![Documentation](https://docs.rs/kuznyechik/badge.svg)](https://docs.rs/kuznyechik) |
 | [Magma](https://en.wikipedia.org/wiki/GOST_(block_cipher)) | GOST 28147-89 and GOST R 34.12-2015 | `magma` | [![crates.io](https://img.shields.io/crates/v/magma.svg)](https://crates.io/crates/magma) | [![Documentation](https://docs.rs/magma/badge.svg)](https://docs.rs/magma) |
 | [RC2](https://en.wikipedia.org/wiki/RC2) |  ARC2  | `rc2` | [![crates.io](https://img.shields.io/crates/v/rc2.svg)](https://crates.io/crates/rc2) | [![Documentation](https://docs.rs/rc2/badge.svg)](https://docs.rs/rc2) |
+| [Serpent](https://en.wikipedia.org/wiki/Serpent_(cipher)) | | `serpent` | [![crates.io](https://img.shields.io/crates/v/serpent.svg)](https://crates.io/crates/serpent) | [![Documentation](https://docs.rs/serpent/badge.svg)](https://docs.rs/serpent) |
+| [SM4](https://en.wikipedia.org/wiki/SM4_(cipher)) | | `sm4` | [![crates.io](https://img.shields.io/crates/v/sm4.svg)](https://crates.io/crates/sm4) | [![Documentation](https://docs.rs/sm4/badge.svg)](https://docs.rs/sm4) |
 | [Twofish](https://en.wikipedia.org/wiki/Twofish) | | `twofish` | [![crates.io](https://img.shields.io/crates/v/twofish.svg)](https://crates.io/crates/twofish) | [![Documentation](https://docs.rs/twofish/badge.svg)](https://docs.rs/twofish) |
+| [Threefish](https://en.wikipedia.org/wiki/Threefish) | | `threefish` | [![crates.io](https://img.shields.io/crates/v/threefish.svg)](https://crates.io/crates/threefish) | [![Documentation](https://docs.rs/threefish/badge.svg)](https://docs.rs/threefish) |
 
 ### Additional crates
 | Crate name | crates.io |  Docs  |
